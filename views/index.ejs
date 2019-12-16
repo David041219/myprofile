@@ -1,21 +1,130 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <div style="display: flex; width: 100%; border: 1px solid blue;">
-      <div style="width:65%;">
-        a
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+</head>
+
+<body>
+  <div style=" padding: 1%; background-color: none; width: 98%; display:flex; justify-content: center; align-items: center; margin-top: 4.5%;">
+
+    <div style="display: flex; width: 80%;">
+      <div style="width:65%; display:flex; padding: 3%;">
+          <table class="profile_tb">
+            <colgroup>
+              <col style="width: 40%;">
+              <col style="width: 60%;">
+            </colgroup>
+
+            <tbody>
+              <tr>
+                <td><i class="fa fa-user-circle"></i> Name</td>
+                <td>David Seheon Chang</td>
+                
+              </tr>
+
+              <tr>
+                <td><i class="fa fa-birthday-cake" aria-hidden="true"></i> Birth</td>
+                <td>2004. 12. 19</td>
+              </tr>
+
+              <tr>
+                <td><i class="fa fa-globe" aria-hidden="true"></i> Country</td>
+                <td>Republic of Korea</td>
+                
+              </tr>
+              
+              <tr>
+                <td><i class="fa fa-users" aria-hidden="true"></i> Personality</td>
+                <td>Cool, Challenging, Imotional, Polite</td>
+                
+              </tr>
+              <tr>
+                <td><i class="fa fa-language" aria-hidden="true"></i> Language</td>
+                <td>Korean, English</td>
+                
+              </tr>
+              <tr>
+                <td><i class="fa fa-star" aria-hidden="true"></i> Interests</td>
+                <td> #Sports #Games #Piano #Music #Programming </td>
+                
+              </tr>
+
+            </tbody>
+
+          </table>
       </div>
-      <div style="width:35%; border: 1px solid red; text-align: center;">
-   
-          <img src='/images/weird.jpg' style="width: 90%;">
-     
+      <div style="width:35%; border-bottom: 13px double lime; border-top: 13px double lime; text-align: center;">
+
+        <img src='/images/weird.jpg' style="width: 100%;">
+
       </div>
     </div>
+
+  </div>
+
+
+
+  <!-- 2번째 프로필 -->
+  <div
+    style=" padding: 1%; background-color: none; width: 98%; display:flex; justify-content: center; align-items: center; margin-top: 3.25%;">
+
+    <div style="display: flex; width:80%;">
+      <div style="width:35%; border-bottom: 13px double lime; border-top: 13px double lime; text-align: center;">
+
+        <img src='/images/back.jpg' style="width: 100%;">
+
+      </div>
+      <div style="width:65%; display:flex; padding: 3%;">
+          <table class="profile_tb">
+            <colgroup>
+              <col style="width: 40%;">
+              <col style="width: 60%;">
+            </colgroup>
+
+            <tbody>
+              <tr>
+                <td rowspan='5'><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</td>
+                <td class='align-left' style="border: none;">Inhun Elementry School (2010~)</td>
+                
+              </tr>
+
+              <tr>
+                <td class='align-left'>Will Rogers Elementry School (2014~)</td>
+              </tr>
+
+              <tr>
+               <td class='align-left'>Stillwater Middle School (2016~)</td>
+                
+              </tr>
+              
+              <tr>
+                
+                <td class='align-left'>Inhun Middle School (2017~)</td>
+                
+              </tr>
+              <tr>
+                
+                <td class='align-left'>Joplin HighSchool (2020~)</td class='align-left'>
+                
+              </tr>
+      
+
+            </tbody>
+
+          </table>
+      </div>
+      
+    </div>
+
+  </div>
+
+  <div class="big_outline">
     
-  
-  </body>
+          </div>
+</body>
+
 </html>
