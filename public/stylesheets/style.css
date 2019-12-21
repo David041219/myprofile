@@ -34,7 +34,7 @@ a {
 .profile_tb>tbody>tr>td:nth-child(1){
   text-align: right;
   padding-right: 3%;
-  border-right:3px solid yellowgreen;
+  border-right:3px solid cadetblue;
   font-weight: 700;
   position: relative;
 }
@@ -54,7 +54,7 @@ a {
 .big_outline{
   height:400px; 
   background-color: none; 
-  border-top: 4px solid lime; 
+  border-top: 4px solid cadetblue; 
   margin-top: 3.25%; 
   margin-left: 5.5%; 
   margin-right: 5.5%;
