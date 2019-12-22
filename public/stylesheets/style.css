@@ -59,3 +59,12 @@ a {
   margin-left: 5.5%; 
   margin-right: 5.5%;
 }
+
+.linker{
+  user-select: none;
+  cursor: pointer;
+
+}
+.linker:hover{
+  color: cadetblue;
+}
