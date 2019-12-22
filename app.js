@@ -6,7 +6,8 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
+var mime = require('mime-types');
+var fs = require('fs');
 var app = express();
 
 // view engine setup
@@ -20,6 +21,23 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+///
+app.get('/.well-known/acme-challenge/1EVN8-iv3faOa-P44tCAt8Z-Ho4j1gghZkf_5Lco_Kg', function(req, res, next) {
+  var filepath="./public/files/1EVN8-iv3faOa-P44tCAt8Z-Ho4j1gghZkf_5Lco_Kg";
+  console.log(filepath);
+
+  var mimetype=mime.lookup("1EVN8-iv3faOa-P44tCAt8Z-Ho4j1gghZkf_5Lco_Kg");
+  console.log(mimetype);
+  ///////////
+  
+  //res.send('hihihihihihi');
+  res.setHeader('Content-disposition', 'attachment;filename='+'1EVN8-iv3faOa-P44tCAt8Z-Ho4j1gghZkf_5Lco_Kg');
+  res.setHeader('Content-type', mimetype);
+
+  var filestream=fs.createReadStream(filepath);
+  filestream.pipe(res);
+});
+
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
